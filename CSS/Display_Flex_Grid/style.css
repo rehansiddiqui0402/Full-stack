@@ -1,32 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
 
-}
 
-#outer{
-    height: 220px;
-    border: 1px solid #000;
-    display: flex;
-    /* gap: 50px; */
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.d
+/* .d
 {
-    width: 50px;
-    height: 100px;
-    border: 2px solid #000;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #000;
     background-color: red;
     color: yellow;
     font-size: xx-small;
     font-weight: 900;
-    /* display: inline-block;
-    margin-right: 100px; */
-}
+} */
 
-.a{
+/* .a{
     width: 100px;
     height: 100px;
     border: 1x solid black;
@@ -46,15 +31,15 @@
 .clickbtn
 {
     background-color: #c0f7c3;
-    /* border:  1px solid color #01ff0d; */
+    border:  1px solid color #01ff0d;
     border-color: #01ff0d;
     border-style: solid;
     border-width: 1px;
     border-radius: 3px;
     box-shadow: 2px 2px 1px 1px rgb(93, 99, 6) ;
-}
+} */
 
-.gd
+/* .gd
 {
     width: 100px;
     height: 150px;
@@ -62,18 +47,115 @@
     background-color: red;
     color: yellow;
     font-size: xx-large;
-    font-weight: 300;
-    display: grid;
+    font-weight: 900;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#outer{
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+fieldset{
+    border: 1px solid #444;
+    padding: 12px 16px 16px;
+    margin-bottom: 14px;
+}
+
+fieldset legend{
+    padding: 6px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #grid-outer{
-    padding: 100px;
+    padding: 40px;
     border: 1px solid black;
     display: grid;
     grid-template-columns: auto auto auto auto;
     /* 200px 200px 200px 200px */
     justify-content: center;
     row-gap: 50px;
-    column-gap: 50px;
+    column-gap: 70px;
    
+}
+
+.personal-outer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 100px;
+    align-items: center;
+
+    
+    
+   
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table th {
+  text-align: left;
+  padding: 4px 6px;
+ 
+}
+
+table td {
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.QualificationD{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 20px;
+    align-items: center;
+
+}
+
+body{
+    font-size: 13px;
+    color: #111;
+    background-color: #e8e8e8;
+    padding: 20px 10px 40px;
+}
+
+
+.legend
+{
+    margin-left: 70px;
+}
+
+.lang-table
+{
+    text-align: left;
+    padding: 4px 6px;
+}
+
+.btn-row button {
+  font-family: inherit;
+  font-size: 12px;
+  padding: 3px 16px;
+  margin: 0 4px;
+  border: 1px solid #888;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.btn-row button:hover {
+  background: #e2e2e2;
 }
