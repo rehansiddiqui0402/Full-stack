@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: rgb(58, 183, 232);
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+}
+#menu-items{
+    display: flex;
+    gap: 15px;
+    align-items: center;    
+}
+
+#menu-items button{
+    padding: 5px 10px;
+    background-color: rgb(225, 63, 9);
+    border: 1x solid brown;
+    border-radius: 5px;
+
+
+}
+
+#ask-me{
+
+    padding: 5px 10px;
+    background-color: rgb(28, 7, 164);
+    border: 1x solid rgb(17, 30, 221);
+    border-radius: 5px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
