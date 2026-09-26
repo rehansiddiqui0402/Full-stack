@@ -1,4 +1,21 @@
 *{
-    background-color: DodgerBlue;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 10px;
 }
+#Header{
+    background-color: rgb(43, 27, 214);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: -5px;
+    
+}
+#menu-items{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 
+}
