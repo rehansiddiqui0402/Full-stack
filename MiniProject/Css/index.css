@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
+
+.topbar{
+    display: flex;
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    align-items: center;
+    position: sticky;
+    
+}
+
