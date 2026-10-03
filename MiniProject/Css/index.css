@@ -158,9 +158,9 @@ h1 span {
 }
 
 .stat strong {
-  margin-top: -20px;
+  margin-top: -25px;
   display: block;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   color: rgb(0, 0, 255);
 }
@@ -394,60 +394,88 @@ h1 span {
 
 .about-lead 
 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.8;
+  font-size: 10px;
+  font-weight: 200;
   margin-bottom: 20px;
 }
 
-.about-image 
-{ 
-  position: relative; 
-  grid: 2;
+.about-image {
+  position: relative;
+  grid-column: 2; /* only if the parent is a grid */
 }
-.about-image img 
-{
+
+.about-image img {
+  display: block;
   width: 100%;
   border-radius: 28px;
-  margin-top: 3px;
-  margin-right: 360px;
 }
+
+/* "25+" badge, top right, overlapping the image edge */
 .years {
   position: absolute;
   top: 20px;
-  right: 20px;
-  background: blue;
-  color: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(13, 27, 62, .12);
+  right: -22px;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 18px 22px;
-  max-width: 200px;
-  max-height: 300px;  
   flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 18px 22px;
+  background: #1a5ce5;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(26, 92, 229, .35);
 }
 
 .years strong {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 23px;
+  font-size: 28px;
+  line-height: 1;
 }
-.years span { 
-  font-size: 12px;
+
+.years span {
+  font-size: 13px;
+}
+
+.emergency-card {
+  position: absolute;
+  left: -34px;
+  bottom: -30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 28px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(13, 27, 62, .12);
+}
+
+.emergency-icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e8f0fe;
+  color: #1a5ce5;
+  font-size: 24px;
+}
+
+.emergency-card h4 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  color: #0d1b3e;
+}
+
+.emergency-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #888;
 }
 
 @media (max-width: 900px) {
   #info,
   .container-about {
-    grid-template-columns: 1fr;
-  }
- 
-  .hero-text,
-  .dr-image {
-    grid-column: 1;
+    grid-template-columns: auto;
   }
  
   #info h1 {
@@ -482,19 +510,20 @@ h1 span {
 .about-text h2{
   font-weight: 400;
   font-size: 3rem;
-  color: light rgba(9, 25, 9, 0.259);
+  color: light #0d1b3e;
   margin-bottom: 30px;
 }
 
 .about-text p{
-  font-size: 30px;
-  color: rgba(64, 81, 97, 0.833);
+  font-size: 17px;
+  color: #555;
   margin-bottom: 40px;
 }
 
 .about-text p.about-lead {
   font-weight: 300;
-  font-size: 27px;
+  color: #6b7280;
+  font-size: 22px;
   margin-bottom: 30px;
 }
 
@@ -504,26 +533,32 @@ h1 span {
   gap: 20px;
   margin-bottom: 40px;
   text-align: center;
+  
 }
 
 .stat{
   display: flex;
   flex-direction: column;
+  gap: 4px;
+  
+}
+
+.about-stats .stat .stat-number {
+  font-size: 30px !important;
+  font-weight: 500 !important;
 }
 
 .stat-number {
   font-weight: 900;
-  font-size: larger;
-
- 
-  color: blue;
+  font-size: 80px;
+  color: #1a5ce5;
 }
 
 .stat-number sup{
-  font-size: 15px;
+  font-size: 20px;
   justify-content: baseline;
   position: relative;
-  top: -1;
+  top: -2;
 }
 
 .stat-label { 
@@ -531,3 +566,175 @@ h1 span {
   color: #666; 
 }
 
+.btn-about{
+  display: inline-block;
+  padding: 16px 34px;
+  background: #1a5ce5;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background .2s;
+}
+
+.btn-about:hover{
+  background: #1448b8;;
+}
+
+
+/* section3 */
+
+#department {
+  padding: 80px 0;
+  background: #fff;
+}
+
+
+.dep-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.dep-header h2 {
+  margin: 0 0 16px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #0d1b3e;
+}
+
+.divider {
+  position: relative;
+  width: 160px;
+  height: 1px;
+  margin: 0 auto 24px;
+  background: #ccc;
+}
+.divider::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 60px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #1a5ce5;
+}
+
+.dep-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.dep-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 48px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.dep-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(13, 27, 62, .10);
+}
+
+.dep-body {
+  flex: 1;
+  padding: 40px;
+}
+
+.dep-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #e8f0fe;
+  color: #1a5ce5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  border-radius: 999px;
+}
+
+.dep-body h3 {
+  margin: 16px 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #0d1b3e;
+}
+
+.dep-body p {
+  margin: 0 0 28px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.dep-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+}
+
+.dep-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #555;
+}
+
+.dep-list i {
+  font-size: 18px;
+  color: #1a5ce5;
+}
+
+.dep-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: #1a5ce5;
+  text-decoration: none;
+}
+
+
+.dep-image {
+  position: relative;
+  height: 250px;
+}
+
+.dep-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dep-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #1a5ce5;
+  font-size: 22px;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
