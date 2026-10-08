@@ -945,3 +945,57 @@ img{
   }
 }
 
+/* Featured Services */
+
+.featured{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+.featured*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-header{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featured-header h2{
+  margin-bottom: 18px;
+  font-size: 36px;
+  font-weight: 400;
+  color: #0d1b3e;
+}
+
+.divider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 1px;
+  margin: 0 auto 22px;
+  background: #bbb;
+}
+
+.featured-header p {
+  font-size: 16px;
+  color: #333;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr);
+  gap: 60px;
+  align-items: start;
+}
+
+/* 
+.divider span {
+  width: 60px;
+  height: 3px;
+  background: #1a5ce5;
+} */
