@@ -44,3 +44,29 @@ console.log(--b);
 
 
 console.log(a > b ? "Hello" : "Bye");
+
+if(a>b){
+    console.log("Hello");
+} else {
+    console.log("bye");
+}
+
+
+//loop
+
+for(var i = 0; i< 5; i++){
+    console.log("We are learning Java Script", i+1);
+}
+
+var i = 0;
+while(i!=5){
+    console.log("We are learning Java Script", i + 1)
+    i++;
+}
+
+var i = 0;
+do{
+    console.log("We are learning Java Script do-while loop", i + 1);
+    i++;
+} while(i<=5);
+
