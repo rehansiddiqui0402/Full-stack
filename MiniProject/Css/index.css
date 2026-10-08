@@ -593,15 +593,6 @@ h1 span {
   margin-bottom: 60px;
 }
 
-services{
-  padding: 80px 0;
-  background: #fff;
-}
-
-ser-header{
-  text-align: center;
-  margin-bottom: ;background-position-x: ;
-}
 .dep-header h2 {
   margin: 0 0 16px;
   font-weight: 500;
@@ -866,7 +857,7 @@ img{
   text-decoration: underline;
 }
 
-/* ---------- Emergency banner ---------- */
+/* Emergency banner  */
 .emergency-banner {
   display: flex;
   align-items: center;
@@ -953,3 +944,4 @@ img{
     transition: none !important;
   }
 }
+
