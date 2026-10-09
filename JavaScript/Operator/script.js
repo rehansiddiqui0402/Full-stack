@@ -70,3 +70,57 @@ do{
     i++;
 } while(i<=5);
 
+console.log("1. check Balance");
+console.log("2. Withdraw Money ");
+console.log("3. Mini Statement");
+console.log("4. Pin change");
+console.log("5. Check Balnace");
+console.log("6. Exit");
+
+
+let Choice=1;
+
+switch(Choice){
+    case 1: {
+        console.log("Checking Your Balance");
+        break;
+    }
+
+    case 2: {
+        console.log("Please Collect your cash");
+         break;
+    }
+
+     case 3: {
+        console.log("Please find your transaction below");
+         break;
+    }
+
+    case 4: {
+        console.log("Enter Your new pin");
+         break;
+    }
+
+    case 5: {
+        console.log("Put your Cah into Machine");
+         break;
+    }
+
+    case 6: {
+        console.log("Thankyou for");
+         break;
+    }
+
+    default: {
+        console.log("Wrong choice")
+    }
+
+}
+choice===1;
+if(Choice===1){
+    console.log("Check your Balance");
+} else if(choice===2){
+    console.log("Check your Balance");   
+}else if(choice===3){
+    console.log("Please find your transaction below");
+}
