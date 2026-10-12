@@ -1161,3 +1161,59 @@ img{
     font-size: 28px;
   }
 }
+
+
+/* cards  styling */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cards {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 24px 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.card h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #0d1b3e;
+  margin-bottom: 14px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+}
