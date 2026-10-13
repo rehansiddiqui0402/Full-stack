@@ -1,64 +1,81 @@
 // let a = 10;
+
 // b = 20;
 
 // let b;
 
-// console.log(a+b);
-00
-var a = 20;
+// console.log(a + b);
 
-b = 10;
-var b;
+var p = 20;
 
-console.log(a + b);
+q = 10;
+var q;
 
-console.log(a + c);
+console.log(p + q);
 
+console.log(p + r);
 
+console.log(r);
 
-function abc(){
-    console.log("I am Function ABC");
+var r = 30;
+
+s = 5;
+
+console.log(s);
+
+console.log(p + s);
+
+var s;
+
+let m;
+
+console.log(m);
+
+console.log(p + m);
+
+m = 3;
+
+function abc() {
+  console.log("I am Function ABC");
 }
 
 abc();
+
 def();
 
-let x = 10;
- y = 20;
+let x = 10,
+  y = 20;
 
- console.log(x+y);
+console.log(x + y);
 
- function def(){
+function def() {
+  console.log("I am Function DEF");
+}
 
-    console.log("I am Function DEF");
+let i = 20;
+{
+  let i = 18;
+  {
+    let i = 16;
+    {
+      let i = 14;
+      console.log(i);
+    }
+    console.log(i);
+  }
+  console.log(i);
+}
+console.log(i);
 
- }
+let prince = "Patel";
 
-//  let i = 20;
-//  {
-//     let i = 16;
-//     {
-//         let i = 14;
-//             console.log(1);      
-        
-//         console.log(1);
-//     }
-//     console.log(1);
-//  }
-//  console.log(1);
+function empire() {
+  console.log("The Prince of this Empire is", prince);
+  let princess = "unknown";
+  console.log("But the Princess is", princess);
+}
 
- let rehan = "siddiqui";
-
- function empire (){
-    console.log("The king of the empire", rehan);
-    let princess = "unknown";
-    console.log("But the queen is", queen);
-    
- }
-
- empire();
- console.log("queen of kings", king);
- console.log("is", queen);
- 
- 
+empire();
+console.log("Princess of prince", prince);
+console.log("is", princess);
 
