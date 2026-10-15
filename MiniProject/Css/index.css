@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -1216,4 +1218,104 @@ h2, h3, h4 {
 .card p {
   font-size: 14px;
   color: #777;
+}
+
+.doctor{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 150px 24px 60px;
+  text-align: center;
+}
+
+.doctor h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #0d1b3e;
+  margin-bottom: 18px;
+}
+
+.divider{
+  width: 180px;
+  height: 1px;
+  background: #bbb;
+  margin: 0 auto 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider span{
+  width: 67px;
+  height: 3px;
+  background: #1a5ce5;
+}
+
+.sub{
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 70px;
+}
+
+.doctor h3{
+  font-size: 48px;
+  font-weight: 300;
+  color: #0d1b3e;
+  margin-bottom: 18px;
+}
+
+.desc {
+  font-size: 18px;
+  font-weight: 300;
+  color: #777;
+}
+
+.card {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.08);
+}
+
+.card h4 {
+  transition: color 0.3s ease;
+}
+
+
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+
+  .doctor h3 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor {
+    padding-top: 90px;
+  }
+
+  .doctor h2,
+  .doctor h3 {
+    font-size: 28px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
 }
