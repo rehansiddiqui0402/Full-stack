@@ -1,31 +1,26 @@
-const ary = ["Apple", 2.5, 99, "Himanchal", "a"];
+const ary = ["Apple", 2.5, 99, "Himacal", "a"];
 
-console.log("With for Each");
+console.log("With For Each");
 
-ary.forEach((element) => {
-    console.log(element);
-    
+var x = ary.forEach((element) => {
+  if (typeof element === "number") {
+    return element;
+  }
 });
 
-ary.forEach((element) => {
-    if(typeof element === "Number"){
-        return element;
-        // console.log(element);
-        
-    }
+console.log("X = ", x);
+
+console.log("With Map");
+
+var x = ary.map((element) => {
+  if (typeof element === "number") {
+    return element;
+  }
 });
 
-// console.log("x = ", x);
+console.log("X = ", x);
 
-// console.log("With map");
-
-// ary.map((element) => {
-//     console.log(element);
-    
-
-// });
-
-const ar2 = ["Apple", 2.5, 99, "Himanchal", "a"];
+const ar2 = ["Apple", 2.5, 98, "Himacal", "a", 99];
 
 var F = ar2.filter((item) => item !== 99);
 
@@ -39,10 +34,9 @@ var Fix = ar2.findIndex((item) => item === 99);
 
 console.log("Fix = ", Fix);
 
+const ar3 = [2, 5, 1, 17, 3, 9, 4, 8];
 
-const ar3 = [2, 5, 1, 7, 8, 9];
-
-var s = ar3.sort();
+var s = ar3.sort((a, b) => b-a);
 
 console.log("S = ", s);
 
