@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-title {
+    text-align: center;
+    padding: 40px 20px 65px;
+}
+
+.page-title h1 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    width: 660px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+}
+
+.breadcrumb {
+    background: #f7f7f7;
+    padding: 18px 0;
+    font-size: 13px;
+}
+
+.breadcrumb-container {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.breadcrumb a {
+    color: #1a5ce0;
+    text-decoration: none;
+}
+
+.slash {
+    color: #bbb;
+    margin: 0 8px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.about {
+    padding: 85px 20px 60px;
+    overflow: hidden;
+}
+
+.about-container {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 530px;
+}
+
+.about-text h2 {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 48px;
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+.big {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6b717b;
+    margin-bottom: 25px;
+}
+
+.small {
+    font-size: 14px;
+    line-height: 26px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 27px;
+}
+
+.stat {
+    width: 158px;
+    height: 116px;
+    background: #f3f6fd;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.stat h3 {
+    font-weight: 300;
+    font-size: 36px;
+    color: #1a5ce0;
+    margin-bottom: 12px;
+}
+
+.stat p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #444;
+}
+
+
+.about-image {
+    position: relative;
+    width: 528px;
+    margin-top: 70px;
+}
+
+.lab {
+    width: 528px;
+    height: 353px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    display: block;
+}
+
+.doctor {
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
