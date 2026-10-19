@@ -1,0 +1,8 @@
+.nav-link{
+    cursor: PointerEvent;
+}
+
+.nav-link:hover{
+    transform: SVGFEFuncAElement(1.1);
+    Transition: transform 0.2s;
+}
