@@ -146,3 +146,140 @@ body {
     border: 6px solid white;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
+
+/* values */
+
+:root {
+  --navy: #0b1f3f;
+  --text: #6b6f76;
+  --blue: #1d5fe0;
+  --circle: #e8effc;
+  --panel: #f8fafd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #fff;
+  color: var(--text);
+}
+
+.values {
+  padding: 40px 20px 0;
+}
+
+.values__header {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.values__title {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: var(--navy);
+}
+
+.values__subtitle {
+  margin-top: 22px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.values__grid {
+  max-width: 1320px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value {
+  text-align: center;
+  padding: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.value__icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 26px;
+  border-radius: 50%;
+  background: var(--circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.value__icon i {
+  font-size: 34px;
+  line-height: 1;
+  color: var(--blue);
+  transition: color 0.3s ease;
+}
+
+.value__name {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.value:hover {
+  transform: translateY(-6px);
+}
+
+.value:hover .value__icon {
+  background: var(--blue);
+  transform: scale(1.1);
+}
+
+.value:hover .value__icon i {
+  color: #fff;
+}
+
+.value:hover .value__name {
+  color: var(--navy);
+}
+
+.value__text {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.values__panel {
+  max-width: 1296px;
+  height: 80px;
+  margin: 110px auto 0;
+  background: var(--panel);
+  border-radius: 20px 20px 0 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .values__grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    margin-top: 60px;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  .values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values__title {
+    font-size: 28px;
+  }
+}
