@@ -4,6 +4,84 @@
     box-sizing: border-box;
 }
 
+.topbar{
+    display: flex;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(49, 9, 209);
+    padding: 12px 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar a{
+  color: white;
+  text-decoration: none;
+}
+
+/* .tobar .container a:hover{
+  opacity: 0.8;
+}
+
+.topbar-social a:hover{
+   opacity: 0.8;
+} */
+
+.topbar .container a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.topbar-social{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+   
+}
+
+.header{
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   
+}
+
+.header h3{
+   
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(19, 18, 18);
+}
+
+.header-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  
+}
+
+.header-container a {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.766);
+}
+
+.header-container a:hover{
+    color: rgba(14, 14, 133, 0.863);
+    
+}
+
+
 .page-title {
     text-align: center;
     padding: 40px 20px 65px;

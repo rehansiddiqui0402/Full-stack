@@ -1,19 +1,21 @@
 const ar = [
-    "rehan",
-    "rupesh",
-    "waquar",
-    "hanzala",
-    "yoyo",
-    "yehhhh",
-    "lalalala"
+  "Saurabh",
+  "Rupesh",
+  "Krishana",
+  "Pushkar",
+  "Muskan_G",
+  "Milki",
+  "Priya",
+  "Muskan_K",
+  "Sujal"
 ];
 
-const list = document.createElement("ol");
+const List = document.createElement("ol");
 
 ar.forEach((item) => {
-    const L = document.createElement("li");
-    L.textContent = item;
-    list.appendChild(1);
+  const l = document.createElement("li");
+  l.textContent = item;
+  List.appendChild(l);
 });
 
-document.getElementById("myList").appendChild(list);
+document.getElementById("myList").appendChild(List);
