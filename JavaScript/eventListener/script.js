@@ -20,7 +20,18 @@ stopAssBTN.addEventListener("click", () => {
 
    showAttBTN.removeEventListener("click", () => {
     attPara.textContent = "Please check your attendance status";
-   });
 
-//    assPara.textContent = "Your assignment Notification is Stopped!";
+   assPara.textContent = "Your assignment Notification is Stopped!";
 });
+
+const parent = document.getElementById("outer");
+const child = document.getElementById("inner");
+parent.addEventListener("click", () => {
+    console.log("Parent Clicked");
+    
+});
+
+child.addEventListener("click", () => {
+    console.log("Child Clicked");
+});
+
