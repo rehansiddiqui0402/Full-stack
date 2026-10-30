@@ -3,14 +3,14 @@ const str = "Anand Kumar";
 console.log(str.charAt(3));
 console.log(str.at(3));
 
-const Array = [10,24,32,53,46,76,89]
-console.log(arr(2));
-console.log(arr.charAt[2]);
+const str2 = str.slice(2, 6);
 
+console.log(str2);
 
-const language = "JavaScript";
+const S_Str = str.substring(2, 5);
 
-console.log(language.charAt(0));
-console.log(language.charAt(4));
-console.log(language.charAt(9));
+console.log(S_Str);
 
+const a = Math.random;
+
+console.log(a);
