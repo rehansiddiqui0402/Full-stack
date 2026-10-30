@@ -31,18 +31,27 @@ const data = [
     description: "very good phone is deep beetroot Color",
     button1: "₹25000",
     button2: "buynow",
+    projects : [{projectName: "abcd", timeline: 2, role: "xyz"}]
   },
   {
     title: "MyPhone 16",
     description: "very good phone is deep beetroot Color",
     button1: "₹25000",
     button2: "buynow",
+    projects: [
+      { projectName: "abcd", timeline: 2, role: "xyz"},
+      { projectName: "def", timeline: 4, role: "prq"},
+    ],
   },
   {
     title: "Ramsungs Fold 7",
     description: "Feel the Book Style Phone which can fold",
     button1: "₹85000",
     button2: "buynow",
+    projects: [
+      { projectName: "abcd", timeline: 2, role: "xyz"},
+      { projectName: "def", timeline: 4, role: "prq"},
+    ],
   },
   {
     title: "audiocon 18",
